@@ -1,7 +1,7 @@
 # Student Performance AI
 
 ## Overview
-This project utilizes linear regression to predict students' final grades based on various input features (X). The output (Y) represents the predicted final grades. The model aims to identify patterns in student data to forecast academic performance, helping educators and students to take proactive steps.
+This project utilizes linear regression to predict students' final grades based on various input features (X). The output (Y) represents the predicted final grades. The model aims to identify patterns in student data to forecast academic performance, helping educators and students to take proactive steps
 
 ## Project Features
 - **Model**: Linear regression.
