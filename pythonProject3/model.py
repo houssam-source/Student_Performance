@@ -2,11 +2,12 @@ import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_squared_error
+from sklearn.metrics import mean_squared_error, root_mean_squared_error
 import tkinter as tk
 from tkinter import filedialog, messagebox
 import matplotlib.pyplot as plt
 from pandas.plotting import scatter_matrix
+
 
 # Global variables to hold data and model
 data_frame = None
@@ -38,11 +39,14 @@ def train_model():
     if data_frame is None:
         messagebox.showerror("Error", "Please load a dataset first.")
         return
-
     try:
         # Assuming 'FinalGrade' is the target and other columns are features
-        X = data_frame[['AttendanceRate', 'StudyHoursPerWeek', 'PreviousGrade', 'ExtracurricularActivities']]
+        X = data_frame[['AttendanceRate', 'StudyHoursPerWeek', 'PreviousGrade', 'ExtracurricularActivities', 'ParentalSupport']]
         y = data_frame['FinalGrade']  # Target (what you want to predict)
+
+        # Calculation of theta set for minimizing cost function using the normal equation
+        theta_set = np.linalg.inv(X.T.dot(X)).dot(X.T.dot(y))
+        print(theta_set)
 
         # Split the data into training and testing sets
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
@@ -54,19 +58,28 @@ def train_model():
         # Predict using the test set
         predictions = lin_reg_model.predict(X_test)
 
+        # Predict final grade for each student in the entire dataset
+        full_predictions = lin_reg_model.predict(X)
+
+        # Add the predictions to the original data frame
+        data_frame['PredictedFinalGrade'] = full_predictions
+
         # Calculate Mean Squared Error (MSE)
         mse = mean_squared_error(y_test, predictions)
 
-        # Display predictions and MSE
-        predictions_text.set(f"Predicted Final Grades: {predictions}")
+
+
+        # Display predictions, MSE, and RMSE
+        predictions_text.set(f"Predicted Final Grades (for test set): {predictions}")
         mse_text.set(f"Mean Squared Error: {mse}")
 
-#plot
-        data_frame.plot(x='AttendanceRate', y ='FinalGrade')
-        plt.show()
         # Optional: Print the model's coefficients
         coef_text.set(f"Model Coefficients: {lin_reg_model.coef_}")
         intercept_text.set(f"Model Intercept: {lin_reg_model.intercept_}")
+
+        # Save the predictions to a CSV file
+        data_frame.to_csv("student_performance_with_predictions.csv", index=False)
+        messagebox.showinfo("Success", "Model trained and predictions saved to CSV.")
     except Exception as e:
         messagebox.showerror("Error", f"An error occurred during training: {e}")
 
@@ -79,6 +92,8 @@ root.title("Student Performance Prediction")
 btn_import = tk.Button(root, text="Import CSV", command=import_csv)
 btn_import.pack(pady=10)
 
+
+
 # Button to train model
 btn_train = tk.Button(root, text="Train Model", command=train_model)
 btn_train.pack(pady=10)
@@ -87,6 +102,7 @@ btn_train.pack(pady=10)
 predictions_text = tk.StringVar()
 label_predictions = tk.Label(root, textvariable=predictions_text, wraplength=400)
 label_predictions.pack(pady=10)
+
 
 mse_text = tk.StringVar()
 label_mse = tk.Label(root, textvariable=mse_text, wraplength=400)
@@ -99,6 +115,8 @@ label_coef.pack(pady=10)
 intercept_text = tk.StringVar()
 label_intercept = tk.Label(root, textvariable=intercept_text, wraplength=400)
 label_intercept.pack(pady=10)
+
+
 
 # Run the GUI loop
 root.mainloop()
