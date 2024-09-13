@@ -1,4 +1,4 @@
-StudentID,Name,Gender,AttendanceRate,StudyHoursPerWeek,PreviousGrade,ExtracurricularActivities,ParentalSupport
+StudentID,Name,Gender,AttendanceRate,StudyHoursPerWeek,PreviousGrade,ExtracurricularActivities,ParentalSupport,FinalGrade
 1,John,Male,85,15,78,1,3
 2,Sarah,Female,90,20,85,2,2
 3,Alex,Male,78,10,65,0,1
