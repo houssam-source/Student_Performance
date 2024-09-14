@@ -4,10 +4,13 @@
 
 The **Student Performance AI** project is designed to predict student final grades using a machine learning approach, specifically linear regression. This project enables educators to analyze student data, identify patterns, and improve performance through predictive analytics. Key features include data preprocessing, visualization through scatter matrices, and model optimization. Additionally, new functionalities are regularly added to enhance user interaction and the accuracy of predictions.
 
-## Project Features
-- **Model**: Linear regression.
-- **Objective**: Predict final grades using multiple input features.
-- **Output**: Predicted final grades (Y).
+### Project Features
+
+- **Predictive Modeling**: Uses linear regression to predict final student grades based on various input features.
+- **Data Preprocessing**: Handles missing or inconsistent data, making it suitable for machine learning.
+- **Visualization**: Implements scatter matrix plots for enhanced data understanding and user-friendly visualization.
+- **Feature Expansion**: Regular updates adding new features and improving the model’s functionality.
+- **User-Friendly Interface**: Intuitive design for educators and students to interact with the system efficiently.
 
 ## Progress Log
 
