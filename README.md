@@ -29,8 +29,14 @@ This project utilizes linear regression to predict students' final grades based 
    - Visualized the relationship between input features and the predicted outcomes.
    - Examined the linear equation to ensure model correctness and accuracy.
 
-### Next Steps:
-- **Model Evaluation**: Evaluate the model performance using metrics like Mean Squared Error (MSE).
-- **Optimization**: Tune the model for better accuracy.
-- **Deployment**: Prepare the model for deployment and integration into a student management system.
+### Day 4:
+- Focused on **plotting the data** for better visualization.
+- Used scatter matrices to explore data relationships and make the visualizations more user-friendly.
+- Began making the data more appropriate for the model by cleaning and preprocessing it.
+
+### Day 5:
+- Added new features to improve the program's functionality.
+- Continued enhancing the dataset, optimizing it for better predictions.
+
+
 
