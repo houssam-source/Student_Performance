@@ -35,11 +35,12 @@ The **Student Performance AI** project is designed to predict student final grad
 
 ### Day 4: Feature Enhancements and Model Optimization
 1. **Enhanced program features** to improve usability and performance.
-2.Refined the dataset further, optimizing the input data to boost the accuracy of the predictions.
+2. **Refined the dataset further.**
+3. **Optimizing the input data** to boost the accuracy of the predictions.
 
 ### Day 5: Data Visualization and Preparation
-1. Focused on **plotting the data** for better insights.
-2. Utilized scatter matrices to explore correlations and enhance user-friendly visual representation.
-3. Prepared the data, making it more suitable for the model through various preprocessing steps.
+1. **Focused on plotting the data** for better insights.
+2. **Utilized scatter matrices** to explore correlations and enhance user-friendly visual representation.
+3. **Prepared the data** and making it more suitable for the model through various preprocessing steps.
 
 
