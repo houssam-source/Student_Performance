@@ -2,45 +2,60 @@
 
 ## Overview
 
-The **Student Performance AI** project is designed to predict student final grades using a machine learning approach, specifically linear regression. This project enables educators to analyze student data, identify patterns, and improve performance through predictive analytics. Key features include data preprocessing, visualization through scatter matrices, and model optimization. Additionally, new functionalities are regularly added to enhance user interaction and the accuracy of predictions.
+The **Student Performance AI** project aims to predict student final grades using linear regression. The project facilitates educators in analyzing student data, identifying patterns, and improving performance through predictive analytics. Key features include comprehensive data preprocessing, visualization using scatter matrices, and model optimization. The project continuously evolves with new functionalities to enhance user interaction and prediction accuracy.
 
 ### Project Features
 
-- **Predictive Modeling**: Uses linear regression to predict final student grades based on various input features.
-- **Data Preprocessing**: Handles missing or inconsistent data, making it suitable for machine learning.
-- **Visualization**: Implements scatter matrix plots for enhanced data understanding and user-friendly visualization.
-- **Feature Expansion**: Regular updates adding new features and improving the model’s functionality.
-- **User-Friendly Interface**: Intuitive design for educators and students to interact with the system efficiently.
+- **Predictive Modeling**: Implements linear regression to forecast student final grades based on various input features.
+- **Data Preprocessing**: Addresses missing and inconsistent data to make it suitable for machine learning.
+- **Visualization**: Utilizes scatter matrices and pair plots for in-depth data analysis and intuitive visualization.
+- **Feature Expansion**: Includes regular updates and enhancements to the model’s functionality.
+- **User-Friendly Interface**: Designed for ease of use by educators and students.
 
 ## Progress Log
 
-### Day 1 - Day 2: Data Collection & Preparation
-1. **Data Collection**: Acquired student performance data from various sources.
-2. **Data Preprocessing**:
-   - Cleaned the dataset by handling missing or inconsistent values.
-   - Transformed categorical data into numerical formats for compatibility with the model.
-3. **Data Analysis**:
-   - Explored the data by visualizing the distributions using histograms, scatter plots, and diagrams to understand feature relationships.
-   
-### Day 3: Model Selection & Implementation
-1. **Model Choice**: Selected linear regression as the primary algorithm for its simplicity and effectiveness in modeling continuous data.
-2. **Feature Engineering**:
-   - Identified key input features (X) that impact final grades.
-   - Constructed a linear equation based on the selected features for implementation.
-   
-3. **Model Implementation**:
-   - Trained the model using the preprocessed data.
-   - Visualized the relationship between input features and the predicted outcomes.
-   - Examined the linear equation to ensure model correctness and accuracy.
+### Day 1 - 2023-09-09: Project Initiation
+- **All Team Members**: Engaged in discussions to evaluate potential project ideas and decided on the 'Student Performance AI' project.
 
-### Day 4: Feature Enhancements and Model Optimization
-1. **Enhanced program features** to improve usability and performance.
-2. **Refined the dataset further.**
-3. **Optimizing the input data** to boost the accuracy of the predictions.
+### Day 2 - 2023-09-10: Role Assignment and Initial Planning
+- **All Team Members**: Finalized the project selection and allocated roles and responsibilities.
+- **Houssam**: Selected linear regression as the algorithm for the predictive model.
+- **Hafid**: Began organizing project tasks and coordinating team efforts.
+- **Haytham**: Started planning the visualizations for data analysis.
+- **Ahlam and Saad**: Drafted initial ideas for the GUI design.
 
-### Day 5: Data Visualization and Preparation
-1. **Focused on plotting the data** for better insights.
-2. **Utilized scatter matrices** to explore correlations and enhance user-friendly visual representation.
-3. **Prepared the data** and making it more suitable for the model through various preprocessing steps.
+### Day 3 - 2023-09-11: Data Collection and Initial Implementation
+- **Houssam**: Commenced the initial model implementation using linear regression.
+- **Hafid**: Collected the dataset, initiated data cleaning, and addressed missing values and outliers.
+- **Haytham**: Began developing scatter matrices and pair plots for data analysis.
+- **Ahlam and Saad**: Created the basic structure for the Tkinter GUI.
 
+### Day 4 - 2023-09-12: Data Preprocessing and Integration
+- **Houssam**: Finalized the linear regression model and ensured its accuracy in making predictions.
+- **Hafid**: Completed preprocessing tasks including feature scaling and encoding, preparing the dataset for modeling.
+- **Haytham**: Integrated visualizations into the project and refined scatter plots and matrices.
+- **Ahlam and Saad**: Added features for importing CSV files and basic interaction elements in the GUI.
 
+### Day 5 - 2023-09-13: Model Testing and Documentation
+- **Houssam**: Tested the model on different subsets of data to optimize performance.
+- **Hafid**: Drafted the initial version of the project documentation.
+- **Haytham**: Continued refining scatter plots and matrices, ensuring readiness for presentation.
+- **Ahlam and Saad**: Worked on integrating model training functionalities into the GUI and ensuring its smooth operation.
+
+### Day 6 - 2023-09-17: Final Adjustments and Preparation
+- **Houssam**: Conducted final tests on the linear regression model.
+- **Hafid**: Verified all data preprocessing steps were complete and finalized the dataset.
+- **Haytham**: Polished visualizations and prepared reports for the final presentation.
+- **Ahlam and Saad**: Completed the integration of the model and visualizations into the GUI.
+
+### Day 7 - 2023-09-18: Finalization and Presentation Preparation
+- **Houssam**: Ensured the model functioned properly with the GUI and performed final predictions.
+- **Hafid**: Coordinated last-minute meetings and finalized the project documentation.
+- **Haytham**: Finalized visual reports and ensured all visual components were functional within the GUI.
+- **Ahlam and Saad**: Made final adjustments to the GUI and tested its overall functionality.
+
+### Day 8 - 2023-09-19: Project Presentation
+- **All Team Members**: Presented the completed project, showcasing the model's functionality, visualizations, and overall project outcomes.
+
+### Day 9 - 2023-09-20: Post-Presentation Review
+- **All Team Members**: Reflected on the project experience and gathered feedback for future improvements.
